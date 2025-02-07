@@ -23,17 +23,17 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install -r requirements.txt
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; else echo "requirements.txt missing"; exit 1; fi
 
       - name: Run Tests
         run: |
-          pytest tests/
+          if [ -d tests ]; then pytest tests/; else echo "No tests found"; exit 1; fi
+
+      - name: Set up Docker
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker.io
 
       - name: Build Docker Image
         run: |
           docker build -t student-marks-api .
-
-      - name: Deploy to AWS (Optional)
-        run: |
-          echo "Deploying to AWS..."
-          # Add deployment steps here (EC2, Lambda, S3, etc.)
