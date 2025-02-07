@@ -1,0 +1,101 @@
+Name,Hours_Studied,Total_Score,Result,study_category
+Student_1,8,38,Fail,High
+Student_2,9,67,Pass,Very High
+Student_3,10,95,Pass,Very High
+Student_4,9,97,Pass,Very High
+Student_5,10,42,Fail,Very High
+Student_6,3,75,Fail,Medium
+Student_7,1,81,Fail,Low
+Student_8,6,85,Pass,High
+Student_9,9,77,Pass,Very High
+Student_10,4,43,Fail,Medium
+Student_11,2,55,Fail,Low
+Student_12,5,35,Fail,Medium
+Student_13,8,41,Fail,High
+Student_14,9,39,Fail,Very High
+Student_15,2,69,Fail,Low
+Student_16,3,37,Fail,Medium
+Student_17,3,37,Fail,Medium
+Student_18,7,99,Pass,High
+Student_19,9,100,Pass,Very High
+Student_20,10,72,Pass,Very High
+Student_21,7,67,Pass,High
+Student_22,10,63,Pass,Very High
+Student_23,7,58,Fail,High
+Student_24,9,70,Pass,Very High
+Student_25,3,98,Fail,Medium
+Student_26,7,30,Fail,High
+Student_27,3,63,Fail,Medium
+Student_28,9,45,Fail,Very High
+Student_29,8,39,Fail,High
+Student_30,2,71,Fail,Low
+Student_31,3,84,Fail,Medium
+Student_32,6,96,Pass,High
+Student_33,2,53,Fail,Low
+Student_34,3,75,Fail,Medium
+Student_35,8,95,Pass,High
+Student_36,1,47,Fail,Low
+Student_37,5,96,Pass,Medium
+Student_38,10,71,Pass,Very High
+Student_39,7,62,Pass,High
+Student_40,9,89,Pass,Very High
+Student_41,2,73,Fail,Low
+Student_42,2,73,Fail,Low
+Student_43,2,56,Fail,Low
+Student_44,4,69,Fail,Medium
+Student_45,1,72,Fail,Low
+Student_46,3,30,Fail,Medium
+Student_47,7,94,Pass,High
+Student_48,5,80,Pass,Medium
+Student_49,1,68,Fail,Low
+Student_50,5,74,Pass,Medium
+Student_51,1,81,Fail,Low
+Student_52,8,75,Pass,High
+Student_53,2,87,Fail,Low
+Student_54,6,80,Pass,High
+Student_55,2,97,Fail,Low
+Student_56,3,49,Fail,Medium
+Student_57,3,42,Fail,Medium
+Student_58,10,82,Pass,Very High
+Student_59,4,39,Fail,Medium
+Student_60,3,94,Fail,Medium
+Student_61,2,31,Fail,Low
+Student_62,8,96,Pass,High
+Student_63,2,85,Fail,Low
+Student_64,10,79,Pass,Very High
+Student_65,10,91,Pass,Very High
+Student_66,8,75,Pass,High
+Student_67,1,47,Fail,Low
+Student_68,6,99,Pass,High
+Student_69,7,77,Pass,High
+Student_70,6,64,Pass,High
+Student_71,2,44,Fail,Low
+Student_72,1,53,Fail,Low
+Student_73,1,91,Fail,Low
+Student_74,7,95,Pass,High
+Student_75,2,96,Fail,Low
+Student_76,6,57,Fail,High
+Student_77,8,33,Fail,High
+Student_78,4,41,Fail,Medium
+Student_79,5,33,Fail,Medium
+Student_80,8,82,Pass,High
+Student_81,10,100,Pass,Very High
+Student_82,10,85,Pass,Very High
+Student_83,10,69,Pass,Very High
+Student_84,3,94,Fail,Medium
+Student_85,10,61,Pass,Very High
+Student_86,4,94,Fail,Medium
+Student_87,9,37,Fail,Very High
+Student_88,4,49,Fail,Medium
+Student_89,2,71,Fail,Low
+Student_90,1,41,Fail,Low
+Student_91,8,45,Fail,High
+Student_92,7,77,Pass,High
+Student_93,3,86,Fail,Medium
+Student_94,8,32,Fail,High
+Student_95,4,62,Fail,Medium
+Student_96,2,80,Fail,Low
+Student_97,10,68,Pass,Very High
+Student_98,10,71,Pass,Very High
+Student_99,1,41,Fail,Low
+Student_100,4,67,Fail,Medium

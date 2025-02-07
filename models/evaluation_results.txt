@@ -1,0 +1,3 @@
+Mean Absolute Error (MAE): 17.82
+Mean Squared Error (MSE): 439.97
+R² Score: 0.01
