@@ -3,55 +3,37 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main # Runs when you push to 'main'
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Code
         uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.9"
+          python-version: 3.9
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
-          pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run tests
-        run: pytest tests/
-
-  docker:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Log in to DockerHub
-        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-
-      - name: Build and push Docker image
+      - name: Run Tests
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/student-marks-api:latest .
-          docker push ${{ secrets.DOCKER_USERNAME }}/student-marks-api:latest
+          pytest tests/
 
-  deploy:
-    needs: docker
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Deploy to AWS EC2 (or ECS)
+      - name: Build Docker Image
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@${{ secrets.AWS_EC2_IP }} << 'EOF'
-            docker pull ${{ secrets.DOCKER_USERNAME }}/student-marks-api:latest
-            docker stop student-marks-api || true
-            docker rm student-marks-api || true
-            docker run -d -p 8000:8000 --name student-marks-api ${{ secrets.DOCKER_USERNAME }}/student-marks-api:latest
-          EOF
+          docker build -t student-marks-api .
+
+      - name: Deploy to AWS (Optional)
+        run: |
+          echo "Deploying to AWS..."
+          # Add deployment steps here (EC2, Lambda, S3, etc.)
